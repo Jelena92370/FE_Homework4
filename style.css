@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    margin-left: 20px;
+   
+ }
+.item {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    
+}
+
+    .item-red {
+        background-color: red;
+        z-index: -1;
+    }
+    .item-green {
+        background-color: green;
+        bottom: 250px;
+        left: 75px;
+    }
+    .item-blue {
+        background-color: blue;
+        bottom: 180px;
+        left: 150px;
+        z-index: -2;
+    }
+
+
+.item-green:hover {
+    transform: scale(1.5) rotate(-45deg);
+    transition: 2s;
+}
